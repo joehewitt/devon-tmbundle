@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>osascript -e "tell application \"Devon\" to find \"$TM_SELECTED_TEXT\""</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@F</string>
+	<key>name</key>
+	<string>Find in Project</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>C5189DD3-AF76-4226-B700-CE5B457714DA</string>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>export PATH=$PATH:"$TM_BUNDLE_SUPPORT";
+
+echo ""
+echo ""
+separator.py "-" " -"
+echo ""
+echo ""
+separator.py "" "="</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>m</string>
+	<key>name</key>
+	<string>New Test</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.devonTest</string>
+	<key>tabTrigger</key>
+	<string>n</string>
+	<key>uuid</key>
+	<string>592F5AE7-6FEF-4810-A511-53B6A6099682</string>
+</dict>
+</plist>

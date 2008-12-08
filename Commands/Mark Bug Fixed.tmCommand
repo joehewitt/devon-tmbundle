@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env python
+
+import os, sys
+from devon import bugs
+
+text = sys.stdin.read()
+path = os.environ['TM_FILEPATH']
+lineNumber = int(os.environ['TM_LINE_NUMBER'])
+
+bugs.markBugFixed(text, path=path, lineNumber=lineNumber)
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~@f</string>
+	<key>name</key>
+	<string>Mark Bug Fixed</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>source.devonBugs</string>
+	<key>uuid</key>
+	<string>D49D4979-C5FD-4AA8-A140-DE0470C9C89B</string>
+</dict>
+</plist>

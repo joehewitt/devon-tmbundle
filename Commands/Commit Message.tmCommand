@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env python
+
+import os
+from devon import bugs
+
+path = os.environ['TM_FILEPATH']
+message = bugs.getBugsFixedSummary(path)
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Bug Fix Summary</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.git-commit</string>
+	<key>tabTrigger</key>
+	<string>bugs</string>
+	<key>uuid</key>
+	<string>83A01B22-F6D3-46D7-AD99-ACE23F5ED1BA</string>
+</dict>
+</plist>

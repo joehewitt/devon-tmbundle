@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>osascript -e "tell application \"Devon\" to find next"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@G</string>
+	<key>name</key>
+	<string>Find Next</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>C76D2C79-0411-4EE7-AAF1-78B70E317C00</string>
+</dict>
+</plist>
